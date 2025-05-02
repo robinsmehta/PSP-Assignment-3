@@ -20,3 +20,9 @@ def find_and_replace(file_name, old_word, new_word):
     except IOError as e:
         print(f"I/O error occurred: {e}")
 
+# Example usage
+if __name__ == "__main__":
+    filename = input("Enter the file name: ")
+    old = input("Enter the word to be replaced: ")
+    new = input("Enter the new word: ")
+    find_and_replace(filename, old, new)
